@@ -1,0 +1,575 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  --color-text: #111;
+  --color-background: #ffffff;
+  --color-purple-banner: #e5d8fd;
+  --color-deal-banner: gold;
+  --button-font-color: rgb(56, 30, 70);
+  --button-background-color: #ffffff;
+  --font-family: "Archivo", Helvetica, Arial, sans-serif;
+}
+
+/**********************/
+/* BASISSTIJLEN */
+/**********************/
+body,
+html {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**********************/
+/* BANNER */
+/**********************/
+
+#paarse-banner ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-purple-banner);
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  height: 3.25em;
+  padding: 0 1em;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#paarse-banner li {
+  display: none;
+  justify-content: space;
+  align-items: center;
+  color: var(--color-text);
+  font-size: 0.8em;
+  font-weight: 400;
+  grid-column-end: auto;
+  grid-column-start: 1;
+  line-height: 1.125em;
+  list-style: none;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 2;
+  position: absolute;
+}
+
+#paarse-banner li.active {
+  display: flex;
+  opacity: 1;
+  z-index: 1;
+}
+
+#paarse-banner img {
+  margin-right: 0.5em;
+  max-height: 0.8em;
+}
+
+/**********************/
+/* MENU */
+/**********************/
+
+#Main_Menu {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-color: #00000041;
+  border-bottom-width: 0.0005em;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 1.7em;
+  padding-left: 1em;
+  padding-right: 1em;
+  z-index: 10;
+  width: 100%;
+  height: 2em;
+  /* background: rgba(255, 255, 255, 0.159); */
+  filter: invert(1);
+}
+
+#Main_Menu button img {
+  max-width: 60%;
+}
+
+#Main_Menu button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#Main_Menu li:nth-of-type(1) {
+  position: relative;
+  right: 1em;
+}
+
+#Main_Menu li:nth-of-type(2) {
+  position: relative;
+  justify-content: center;
+  left: 3.125em;
+}
+
+#Main_Menu li:nth-of-type(2) img {
+  max-width: 80%;
+}
+
+#Main_Menu li:nth-of-type(3) {
+  position: relative;
+  left: 2.25em;
+}
+
+#Main_Menu li:nth-of-type(4) {
+  position: relative;
+  left: 1.25em;
+}
+
+#Main_Menu li:nth-of-type(5) {
+  position: relative;
+  left: 0.25em;
+}
+
+/* #Main_Menu :hover{
+  border-bottom: none;
+  filter:grey-scale(100%);
+} */
+
+/********/
+/* HAMBURGER */
+/********/
+
+/**********************/
+/* HEADER */
+/**********************/
+
+#StartImg {
+  display: block;
+  list-style: none;
+  position: relative;
+  width: 23.4375em;
+  height: 33.349625em;
+  overflow: hidden;
+}
+
+#StartImg img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  transform: scale(2.43);
+  transform-origin: 52% 69%;
+  object-fit: cover;
+  color: #1111114f;
+  border-style: dashed;
+}
+
+#StartImg p:first-of-type {
+  position: absolute;
+  top: 39%;
+  left: 12.5%;
+  color: white;
+  font-style: bold;
+  font-size: 3.3em;
+  font-family: var(--font-family);
+}
+
+#StartImg p:last-of-type {
+  position: absolute;
+  top: 54%;
+  color: white;
+  padding: 2em;
+  font-size: 1.4em;
+  font-style: 300;
+  text-transform: bold;
+  font-family: var(--font-family);
+  text-align: center;
+}
+
+#StartImg a {
+  position: absolute;
+  bottom: 7%;
+  left: 34%;
+  font-size: 1.1em;
+  color: var(--button-font-color);
+  padding: 0.75em 1.5em 0.75em 1.5em;
+  border-radius: 0.25em;
+  background-color: var(--button-background-color);
+  cursor: pointer;
+}
+
+/**********************/
+/* Slider cluse horloges */
+/**********************/
+
+h2 {
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-bottom: 0.25em;
+  color: var(--button-font-color);
+  font-family: var(--font-family);
+  font-size: 180%;
+  font-weight: 520;
+  width: 90%;
+}
+
+.card-list .card-item {
+  color: #000000;
+  width: 18.5em;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+  margin-left: 1em;
+  margin-top: 0;
+}
+
+.card-list .card-item .artikel-image {
+  background-color: rgba(245, 245, 220, 0.748);
+  width: 18.77em;
+  height: 23.26em;
+  margin-bottom: 0.5em;
+  object-fit: cover;
+  padding: 2em;
+  border-radius: 3%;
+}
+
+.card-list .card-item .like-icon {
+  position: relative;
+  width: 9%;
+  max-height: 7%;
+  background-color: rgba(255, 255, 255, 0.883);
+  object-fit: contain;
+  padding: 0.5em;
+  top: 2.5em;
+  left: 16em;
+  border-radius: 42%;
+}
+
+.card-list .card-item .artikel-omschrijving {
+  font-size: 1rem;
+  margin-top: 0;
+  width: 18.77em;
+}
+
+.card-list .card-item .Prijs {
+  position: relative;
+  bottom: 1.2em;
+  width: 1.5em;
+  color: var(--button-font-color);
+  font-size: 1.8em;
+  font-weight: bolder;
+}
+
+.card-list .card-item .KommaPrijs {
+  position: relative;
+  margin: 0;
+  bottom: 7.258em;
+  left: 2.8em;
+  width: 1.5em;
+  color: var(--button-font-color);
+  font-size: 0.8em;
+  font-weight: bolder;
+}
+
+.card-list .card-item .KommaPrijsHonderd {
+  position: relative;
+  margin: 0;
+  bottom: 7.258em;
+  left: 4em;
+  width: 1.5em;
+  color: var(--button-font-color);
+  font-size: 0.8em;
+  font-weight: bolder;
+}
+
+.slider-wrapper .card-list {
+  display: grid;
+  gap: 0em;
+  overflow-x: auto;
+  grid-template-columns: repeat(6, 1fr);
+  scrollbar-width: none;
+}
+
+.container {
+  max-width: 75em;
+  width: 95%;
+  overflow: hidden;
+}
+
+/**********************/
+/* Back to school card*/
+/**********************/
+
+H3 {
+  font-family: var(--font-family);
+  font-weight: 500em;
+  font-size: 250%;
+  position: relative;
+  bottom: 5.5em;
+  color: white;
+  width: 7em;
+  left: 0.85em;
+  margin: 0;
+}
+
+.CardBackToSchool {
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+  height: 29.181125em;
+  margin-right: 1em;
+}
+
+.CardBackToSchool img {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  height: 29.181125em;
+  object-fit: cover;
+}
+
+.CardBackToSchool p {
+  font-family: var(--font-family);
+  font-size: xx-large;
+  position: relative;
+  max-width: 85%;
+  bottom: 6.5em;
+  color: white;
+  left: 1.1em;
+  margin: 0;
+}
+
+.CardBackToSchool a {
+  font-family: var(--font-family);
+  font-size: large;
+  position: relative;
+  bottom: 10em;
+  left: 2em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  border-radius: 0.25em;
+  background-color: white;
+  color: var(--button-font-color);
+  margin: 0;
+  cursor: pointer;
+}
+
+/**********************/
+/* Back to school slider*/
+/**********************/
+
+.card-listSchool .card-itemSchool {
+  display: flex;
+  border-radius: 0.5em;
+  height: 7.5em;
+  width: 18em;
+  margin-left: 0.75em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  flex-direction: row;
+}
+
+.card-itemSchool {
+  border-style: solid;
+  border-color: #9f9f9f39;
+  border-width: 0.0005em;
+}
+
+.card-listSchool .card-itemSchool .card-itemText {
+  display: grid;
+  position: relative;
+  grid-template: column;
+  padding: 0.75em;
+  height: 7.5em;
+  width: 18em;
+  margin-top: 0;
+}
+
+.card-listSchool .card-itemSchool .artikel-image {
+  position: static;
+  max-width: 100%;
+  max-height: 100%;
+  background: beige;
+  height: 7.5em;
+  width: 7.5em;
+}
+
+.card-listSchool .card-itemSchool .artikel-omschrijving {
+  color: black;
+  text-overflow: ellipsis;
+  padding: 0.75;
+  font-size: normal;
+  line-height: 1em;
+  bottom: 0.5em;
+  position: relative;
+}
+
+.card-listSchool .card-itemSchool .StreepPrijs {
+  color: rgba(128, 128, 128, 0.49);
+  text-decoration: line-through;
+  font-size: 0.75em;
+  position: relative;
+  bottom: 1.5em;
+  width: 3em;
+}
+
+.card-listSchool .card-itemSchool .Prijs {
+  color: var(--button-font-color);
+  font-weight: bolder;
+  font-size: 1.5em;
+  position: relative;
+  bottom: 2.9em;
+  left: 1.6em;
+  width: 3em;
+}
+
+.card-listSchool .card-itemSchool .KommaPrijs {
+  color: var(--button-font-color);
+  font-size: 0.75em;
+  position: relative;
+  bottom: 10.85em;
+  left: 5.6em;
+  width: 3em;
+}
+
+.slider-wrapperSchool .card-listSchool {
+  display: grid;
+  gap: 0em;
+  overflow-x: auto;
+  grid-template-columns: repeat(6, 1fr);
+  scrollbar-width: 0.5em;
+}
+
+.containerSchool {
+  max-width: 75em;
+  width: 95%;
+  overflow: hidden;
+}
+
+/**********************/
+/* Wordt member*/
+/**********************/
+
+article img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  position: relative;
+  margin-top: 1em;
+  padding: 0.5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-radius: 0.2em;
+}
+
+h4 {
+  font-family: var(--font-family);
+  font-size: 2.5em;
+  font-weight: 200;
+  color: var(--button-font-color);
+  position: relative;
+  bottom: 1em;
+  width: 3.75em;
+  line-height: 1.25em;
+}
+
+.Member p {
+  font-size: 1.8em;
+  position: relative;
+  font-weight: 400;
+  color: var(--button-font-color);
+  bottom: 3em;
+  width: 7em;
+  line-height: 1em;
+}
+
+.Member a {
+  font-size: normal;
+  position: relative;
+  color: white;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  background-color: var(--button-font-color);
+  position: relative;
+  bottom: 4.95em;
+  border-radius: 0.25em;
+}
+
+.Member {
+  word-break: normal;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: beige;
+  height: 19.7em;
+  width: 22.4375em;
+  margin: 0;
+  position: relative;
+  left: 0.5em;
+  bottom: 0.35em;
+  margin-bottom: 3em;
+}
+
+/**********************/
+/* Member carousel */
+/**********************/
+.image-item .insta-pf{
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image-item .influencer-image{
+  display: flex;
+  border-radius: 0.5em;
+  height: 19.8545em;
+  width: 15.8838125em;
+  flex-direction: column;
+  object-fit: cover;
+}
+
+.image-item{
+  margin:0;
+}
+
+.containerCarousel{
+  background-color: var(--button-font-color);
+  color: white;
+}
+
+.containerCarousel .Lucardilife{
+  font-size:larger;
+  font-weight: 900;
+  position: relative;
+}
+
+.containerCarousel .Gespot{
+  font-size:xx-large;
+  font-weight: 500;
+  position:relative;
+}
