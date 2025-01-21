@@ -18,6 +18,8 @@
   --button-font-color: rgb(56, 30, 70);
   --button-background-color: #ffffff;
   --font-family: "Archivo", Helvetica, Arial, sans-serif;
+  --font-details: rgba(18, 18, 18, 0.6);
+  --colour-line-details: rgba(110, 109, 109, 0.171);
 }
 
 /**********************/
@@ -56,7 +58,7 @@ html {
 
 #paarse-banner li {
   display: none;
-  justify-content: space;
+  justify-content: space-around;
   align-items: center;
   color: var(--color-text);
   font-size: 0.8em;
@@ -79,8 +81,11 @@ html {
 }
 
 #paarse-banner img {
+  position: relative;
   margin-right: 0.5em;
-  max-height: 0.8em;
+  max-height: 100%;
+  bottom: 0.75em;
+  left: 0.25em;
 }
 
 /**********************/
@@ -98,13 +103,12 @@ html {
   justify-content: space-between;
   list-style: none;
   margin: auto;
-  padding-top: 2em;
   padding-bottom: 1.7em;
   padding-left: 1em;
   padding-right: 1em;
   z-index: 10;
   width: 100%;
-  height: 2em;
+  height: 3.625em;
   /* background: rgba(255, 255, 255, 0.159); */
   filter: invert(1);
 }
@@ -148,10 +152,10 @@ html {
   left: 0.25em;
 }
 
-/* #Main_Menu :hover{
+#Main_Menu :hover {
   border-bottom: none;
-  filter:grey-scale(100%);
-} */
+  filter: grayscale(100%);
+}
 
 /********/
 /* HAMBURGER */
@@ -162,12 +166,15 @@ html {
 /**********************/
 
 #StartImg {
+  position: relative;
+  padding-left: 0;
   display: block;
   list-style: none;
   position: relative;
   width: 23.4375em;
   height: 33.349625em;
   overflow: hidden;
+  margin: 0;
 }
 
 #StartImg img {
@@ -179,6 +186,8 @@ html {
   object-fit: cover;
   color: #1111114f;
   border-style: dashed;
+  margin: 0;
+  padding: 0;
 }
 
 #StartImg p:first-of-type {
@@ -186,7 +195,7 @@ html {
   top: 39%;
   left: 12.5%;
   color: white;
-  font-style: bold;
+  font-style: normal;
   font-size: 3.3em;
   font-family: var(--font-family);
 }
@@ -197,8 +206,8 @@ html {
   color: white;
   padding: 2em;
   font-size: 1.4em;
-  font-style: 300;
-  text-transform: bold;
+  font-style: normal;
+  text-transform: none;
   font-family: var(--font-family);
   text-align: center;
 }
@@ -252,14 +261,11 @@ h2 {
 
 .card-list .card-item .like-icon {
   position: relative;
-  width: 9%;
-  max-height: 7%;
-  background-color: rgba(255, 255, 255, 0.883);
-  object-fit: contain;
-  padding: 0.5em;
-  top: 2.5em;
-  left: 16em;
-  border-radius: 42%;
+  width: 14%;
+  max-height: 100%;
+  top: 3.75em;
+  left: 15em;
+  z-index: 99;
 }
 
 .card-list .card-item .artikel-omschrijving {
@@ -309,7 +315,7 @@ h2 {
 
 .container {
   max-width: 75em;
-  width: 95%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -319,7 +325,7 @@ h2 {
 
 H3 {
   font-family: var(--font-family);
-  font-weight: 500em;
+  font-weight: 500;
   font-size: 250%;
   position: relative;
   bottom: 5.5em;
@@ -332,9 +338,9 @@ H3 {
 .CardBackToSchool {
   display: block;
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   height: 29.181125em;
-  margin-right: 1em;
+  width: 23.4375em;
 }
 
 .CardBackToSchool img {
@@ -344,6 +350,7 @@ H3 {
   max-height: 100%;
   height: 29.181125em;
   object-fit: cover;
+  padding: 0;
 }
 
 .CardBackToSchool p {
@@ -381,7 +388,7 @@ H3 {
 .card-listSchool .card-itemSchool {
   display: flex;
   border-radius: 0.5em;
-  height: 7.5em;
+  height: auto;
   width: 18em;
   margin-left: 0.75em;
   margin-bottom: 1em;
@@ -393,12 +400,13 @@ H3 {
   border-style: solid;
   border-color: #9f9f9f39;
   border-width: 0.0005em;
+  border-style: solid;
 }
 
 .card-listSchool .card-itemSchool .card-itemText {
   display: grid;
   position: relative;
-  grid-template: column;
+  grid-template: none;
   padding: 0.75em;
   height: 7.5em;
   width: 18em;
@@ -412,13 +420,13 @@ H3 {
   background: beige;
   height: 7.5em;
   width: 7.5em;
+  margin-top: 0;
 }
 
 .card-listSchool .card-itemSchool .artikel-omschrijving {
   color: black;
   text-overflow: ellipsis;
-  padding: 0.75;
-  font-size: normal;
+  font-size: medium;
   line-height: 1em;
   bottom: 0.5em;
   position: relative;
@@ -457,12 +465,12 @@ H3 {
   gap: 0em;
   overflow-x: auto;
   grid-template-columns: repeat(6, 1fr);
-  scrollbar-width: 0.5em;
+  scrollbar-width: thin;
 }
 
 .containerSchool {
   max-width: 75em;
-  width: 95%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -470,7 +478,7 @@ H3 {
 /* Wordt member*/
 /**********************/
 
-article img {
+img {
   position: relative;
   max-width: 100%;
   max-height: 100%;
@@ -505,7 +513,7 @@ h4 {
 }
 
 .Member a {
-  font-size: normal;
+  font-size: medium;
   position: relative;
   color: white;
   padding-left: 1.5em;
@@ -535,41 +543,454 @@ h4 {
 }
 
 /**********************/
-/* Member carousel */
+/* Footer */
 /**********************/
-.image-item .insta-pf{
-  height: 2.5em;
-  width: 2.5em;
-  border-radius: 50%;
-  object-fit: cover;
+
+#PaarseBlokFooter {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  padding: 1em;
+  background-color: var(--color-purple-banner);
+  max-width: 37.5em;
 }
 
-.image-item .influencer-image{
+#PaarseBlokFooter .paar {
   display: flex;
-  border-radius: 0.5em;
-  height: 19.8545em;
-  width: 15.8838125em;
   flex-direction: column;
-  object-fit: cover;
+  align-items: flex-start;
+  text-align: left;
 }
 
-.image-item{
-  margin:0;
+#PaarseBlokFooter .paar img {
+  max-width: 5em;
+  height: auto;
+  margin-bottom: 0.75em;
 }
 
-.containerCarousel{
-  background-color: var(--button-font-color);
+#PaarseBlokFooter .paar p {
+  font-family: var(--font-family);
+  font-size: 0.875em;
+  font-weight: 100;
+  color: rgb(56, 30, 70);
+  margin-right: 1em;
+  margin-top: 0;
+}
+
+
+#Footer-groep {
+  column-gap: 1em;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  outline: none;
+}
+
+/**********************/
+/* Detail stuk */
+/**********************/
+
+.Para summary {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  font-size: 1.125em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 0;
+  right: 1em;
+  cursor: pointer;
+  outline: none;
+}
+
+.Para ul {
+  position: relative;
+  list-style: none;
+  margin-top: 0;
+  bottom: 1em;
+}
+
+.Para li {
+  position: relative;
+  right: 3em;
+  font-size: 12px;
+  color: var(--font-details);
+  margin-bottom: 0.75em;
+  cursor: pointer;
+}
+
+.detail-lijn {
+  width: 21em;
+  height: 0.005em;
+  background-color: var(--colour-line-details);
+  cursor: pointer;
+}
+
+/**********************/
+/* Lucardi member*/
+/**********************/
+
+.Member-stuk h5 {
+  position: relative;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--button-font-color)
+}
+
+.Member-stuk {
+  font-size: 0.9em;
+  margin-bottom: 1.25em;
+}
+
+.Member-stuk p {
+  position: relative;
+  margin-bottom: 2.5em;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.Member-stuk a {
+  font-size: medium;
   color: white;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  background-color: var(--button-font-color);
+  border-radius: 0.25em;
+  margin-top: 2em;
+  height: 48px;
 }
 
-.containerCarousel .Lucardilife{
-  font-size:larger;
-  font-weight: 900;
+#Certificaat img {
+  height: 94.7344px;
+  width: 5em;
+  margin: 0em;
+  padding: 0;
+  position: relative;
+  right: 0.65em;
+}
+
+#Certificaat {
+  display: grid;
+  grid-template-columns: 5em 5em;
+  column-gap: 0em;
+  margin-bottom: 1em;
+}
+
+.Laatste-stuk {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  display: grid;
+  grid-template-rows: auto auto auto;
   position: relative;
 }
 
-.containerCarousel .Gespot{
-  font-size:xx-large;
-  font-weight: 500;
-  position:relative;
+.Icon-stuk {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto;
 }
+
+.logo {
+  position: relative;
+  width: 30%;
+}
+
+.social-media-icons {
+  position: relative;
+  display: flex;
+}
+
+.social-media-icons img {
+  width: 2.25em;
+  height: auto;
+  margin-bottom: 1em;
+  color: rgba(39, 38, 38, 0.561);
+}
+
+.Laatste-Links {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  left: 0.25em;
+}
+
+.Laatste-Links li {
+  margin: 0.5em 0;
+  margin-bottom: 1.5em;
+  font-size: 0.85em;
+  color: rgba(39, 38, 38, 0.561);
+}
+
+/**********************/
+/* Artikel pagina */
+/**********************/
+
+#Terug-Knop {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: 0;
+  position: relative;
+  margin-top: 1em;
+}
+
+#Terug-Knop p {
+  position: relative;
+  top: 1em;
+  font-size: 0.75em;
+  color: rgb(67, 67, 67);
+  margin-left: 1em;
+}
+
+/**********************/
+/* Slider */
+/**********************/
+
+.image-list .image-item {
+  display: flex;
+  width: 100vh;
+  margin-right: 0.5em;
+}
+
+.image-item img {
+  padding: 0;
+  margin: 0;
+}
+
+.image-list .image-item {
+  position: static;
+  max-width: 100%;
+  max-height: 100%;
+  background: rgba(242, 242, 231, 0.837);
+  margin-top: 0;
+  height: 375px;
+  width: 375px;
+}
+
+.image-slider-wrapper .image-list {
+  display: grid;
+  gap: 0em;
+  overflow-x: auto;
+  grid-template-columns: repeat(5, 1fr);
+  scrollbar-width: thin;
+}
+
+.Image-container {
+  max-width: 75em;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tip {
+  position: relative;
+  top: 5em;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.722);
+  padding: 0.75em;
+  width: fit-content;
+}
+
+/**********************/
+/* Artikel pagina */
+/**********************/
+
+#Collectie-naam {
+  color: var(--font-details);
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+#Ster {
+  display: flex;
+  flex-direction: row;
+}
+
+#Ster p {
+  position: relative;
+  font-size: 1em;
+  font-weight: 400;
+  bottom: 0.7em;
+  left: 0.25em;
+  margin-left: 0.25em;
+}
+
+#Ster p:nth-of-type(2) {
+  color: var(--font-details);
+}
+
+#Ster img {
+  width: 1em;
+  height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+#Oud-prijs {
+  color: rgba(128, 128, 128, 0.49);
+  text-decoration: line-through;
+  font-size: 1em;
+  position: relative;
+  width: 3em;
+  margin: 0;
+  top: 0.125em;
+}
+
+#Nieuw-prijs {
+  color: var(--button-font-color);
+  font-weight: bolder;
+  font-size: 1.5em;
+  position: relative;
+  width: fit-content;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#Nieuw-prijs-komma {
+  position: relative;
+  margin: 0;
+  width: 1.5em;
+  color: var(--button-font-color);
+  font-size: 0.8em;
+  font-weight: bolder;
+  margin: 0;
+}
+
+#Prijs {
+  display: flex;
+  flex-direction: row;
+}
+
+#Kleur {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  margin-top: 1.125em;
+}
+
+
+/**********************/
+/* Kleur sieraad */
+/**********************/
+
+#Kleur li:nth-of-type(1) {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#Kleur li:nth-of-type(2) {
+  font-size: 0.95em;
+  font-weight: 100;
+  position: relative;
+  left: 0.3em;
+  top: 0.05em;
+}
+
+#Goud-knop {
+  background-image: linear-gradient(70deg, rgb(170, 119, 28), rgb(251, 245, 183));
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0;
+  border-style: solid;
+  border-width: 0.0125em;
+  margin-top: 0.75em;
+  position: relative;
+}
+
+#Zilver-knop {
+  background-image: linear-gradient(70deg, rgb(192, 192, 192), rgb(235, 235, 235));
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0;
+  border-width: 0.0125em;
+  margin-top: 0.75em;
+  position: relative;
+  left: 0.5em;
+}
+
+#Knoppen {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  margin-top: 1.125em;
+  margin-bottom: 2.5em;
+}
+
+/**********************/
+/* Groene bestelling balk */
+/**********************/
+
+#Groen-stuk {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(217, 251, 213);
+  color: rgb(8, 92, 63);
+  width:20em;
+  margin: 0;
+  padding: 0;
+}
+
+#Groen-stuk p{
+  position:relative;
+  left:0.5em;
+}
+
+#Groen-stuk img {
+  width: 2em;
+  position: relative;
+  bottom:0.5em;
+}
+
+/**********************/
+/* Iconen onder kleur keuze*/
+/**********************/
+
+#Informatie-bestelling{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  margin:0;
+  padding:0;
+  margin-bottom:2em;
+}
+
+#Informatie-bestelling .Icon{
+  display:flex;
+  flex-direction:row;
+}
+
+#Informatie-bestelling .Icon p{
+  font-size:0.875em;
+  position:relative;
+  top:0.875em;
+}
+
+/**********************/
+/* Uitklap informatie*/
+/**********************/
+
