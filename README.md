@@ -260,10 +260,4 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. Hmaburger menu website: Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., . . . Repo, S. (n.d.). Hamburger Menu Vector SVG Icon - SVG Repo. SVG Repo. https://www.svgrepo.com/svg/312300/hamburger-menu
   3. https://www.w3schools.com/tags/ref_pxtoemconversion.asp
 
-  4. https://youtu.be/qOO6lVMhmGc?si=Z-Xb5RF_JC9zQlJA (voor slider artikelen)
-  5. https://youtu.be/PsNaoDhzQm0?si=xBuMs1yphSWfScgB (voor slider artikelen)
-  6. https://youtu.be/XxG7vqFecR8?si=ZL3xXcXc_FxL-egY (voor carousel)
-
-  7. https://youtu.be/j18CH0Grhbw?si=hMffg9StXBUDvqip (voor auto slide, bovenste banner)
-
 </details>
