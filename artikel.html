@@ -38,7 +38,7 @@
     <nav>
       <ul id="Main_Menu">
         <li>
-          <button aria-label="Open menu">
+          <button>
             <img src="images/Icons/Hamburger-menu.svg" alt="Open menu">
           </button>
         </li>
@@ -57,45 +57,47 @@
       </ul>
 
       <!-- Hamburger menu -->
-      <ul id="hamburger-menu" hidden>
-        <li>
+      <div id="hamburger-menu" hidden>
+        <div id="Boven-Hamburger">
           <button>
-            <img src="images/Icons/Kruis-icon.svg" alt="Sluiten">
+            <img src="images/Icons/Kruis-icon.svg" id="Sluit" alt="Sluiten">
           </button>
-        </li>
-        <li>
-          <a href="#"><img src="images/Icons/Lucardi-logo.svg" alt="Lucardi logo"></a>
-        </li>
-        <li><a href="#">Alle producten</a></li>
-        <li><a href="#">Sieraden en Horloges</a></li>
-        <li><a href="#">Cadeaus</a></li>
-        <li><a href="#">Collecties</a></li>
-        <li><a href="#">Inspiratie</a></li>
-        <li><a href="#">Gaatjes schieten</a></li>
-        <li><a href="#">Sale</a></li>
-        <li>
-          <a href="#"><img src="images/Icons/poppetje.svg" alt="Inloggen"> Inloggen /
-            member account aanmaken</a>
-        </li>
-        <li>
-          <a href="#"><img src="images/Icons/winkel-icon.svg" alt="Winkels & openingstijden">
-            Winkels & openingstijden</a>
-        </li>
-        <li>
-          <a href="#"><img src="images/Icons/Vraagteken-icon.svg" alt="Hulp & informatie">
-            Ik heb hulp nodig</a>
-        </li>
-        <li>
-          <details>
-            <summary>Taal selecteren: Nederlands</summary>
-            <ul>
-              <li><a href="#">Nederlands</a></li>
-              <li><a href="#">België</a></li>
-              <li><a href="#">Deutsch</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul>
+          <a href="#"><img src="images/Icons/Lucardi-logo.svg" id="Sluit-Logo" alt="Lucardi logo"></a>
+        </div>
+        <ul id="hamburger-menu-lijst">
+          <li><a href="#">Alle producten</a></li>
+          <li><a href="#">Sieraden en Horloges</a></li>
+          <li><a href="#">Cadeaus</a></li>
+          <li><a href="#">Collecties</a></li>
+          <li><a href="#">Inspiratie</a></li>
+          <li><a href="#">Gaatjes schieten</a></li>
+          <li id="Sale"><a href="#">Sale</a></li>
+        </ul>
+        <ul id="Hamburgers-icon">
+          <li>
+            <a href="#"><img src="images/Icons/poppetje.svg" alt="Inloggen"> Inloggen /
+              member account aanmaken</a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Icons/winkel-icon.svg" alt="Winkels & openingstijden">
+              Winkels & openingstijden</a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Icons/Vraagteken-icon.svg" alt="Hulp & informatie">
+              Ik heb hulp nodig</a>
+          </li>
+          <li>
+            <details>
+              <summary>Taal selecteren</summary>
+              <ul id="Uitklap-Talen">
+                <li><a href="#">Nederlands</a></li>
+                <li><a href="#">België</a></li>
+                <li><a href="#">Deutsch</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -130,57 +132,57 @@
     </div>
 
     <div id="Margin-top-stuk">
-    <p id="Collectie-naam">Camille</p>
-    <h1>Stalen goldplated oorbellen druppel</h1>
-    <div id="Ster">
-      <img src="images/Icons/ster.png" alt=" 5 sterren review">
-      <img src="images/Icons/ster.png" alt="">
-      <img src="images/Icons/ster.png" alt="">
-      <img src="images/Icons/ster.png" alt="">
-      <img src="images/Icons/ster.png" alt="">
-      <p>5,00</p>
-      <p>(2)</p>
+      <p id="Collectie-naam">Camille</p>
+      <h1>Stalen goldplated oorbellen druppel</h1>
+      <div id="Ster">
+        <img src="images/Icons/ster.png" alt=" 5 sterren review">
+        <img src="images/Icons/ster.png" alt="">
+        <img src="images/Icons/ster.png" alt="">
+        <img src="images/Icons/ster.png" alt="">
+        <img src="images/Icons/ster.png" alt="">
+        <p>5,00</p>
+        <p>(2)</p>
+      </div>
+      <div id="Prijs">
+        <p id="Oud-prijs">19.99</p>
+        <p id="Nieuw-prijs">13</p>
+        <p id="Nieuw-prijs-komma">99</p>
+      </div>
+
+      <ul id="Kleur">
+        <li>Kleur sieraad:</li>
+        <li>Goud</li>
+      </ul>
+
+      <div id="Knoppen">
+        <div id="Goud-knop"></div>
+        <div id="Zilver-knop"></div>
+      </div>
+
+      <ul id="Groen-stuk">
+        <li>
+          <img src="images/Icons/clock.png" alt="klok icoon">
+        </li>
+        <li>
+          <p>Voor 22:00 besteld, morgen in huis</p>
+        </li>
+      </ul>
+
+      <ul id="Informatie-bestelling">
+        <li class="Icon">
+          <img src="images/Icons/Bezorg.svg" alt="Bezorg icoon">
+          <p>Gratis verzending vanaf €30</p>
+        </li>
+        <li class="Icon">
+          <img src="images/Icons/Retour.svg" alt="Retour icoon">
+          <p>60 dagen gratis retourneren</p>
+        </li>
+        <li class="Icon">
+          <img src="images/Icons/winkel-icon.svg" alt="Winkel icoon">
+          <p>138 winkels</p>
+        </li>
+      </ul>
     </div>
-    <div id="Prijs">
-      <p id="Oud-prijs">19.99</p>
-      <p id="Nieuw-prijs">13</p>
-      <p id="Nieuw-prijs-komma">99</p>
-    </div>
-
-    <ul id="Kleur">
-      <li>Kleur sieraad:</li>
-      <li>Goud</li>
-    </ul>
-
-    <div id="Knoppen">
-      <div id="Goud-knop"></div>
-      <div id="Zilver-knop"></div>
-    </div>
-
-    <ul id="Groen-stuk">
-      <li>
-        <img src="images/Icons/clock.png" alt="klok icoon">
-      </li>
-      <li>
-        <p>Voor 22:00 besteld, morgen in huis</p>
-      </li>
-    </ul>
-
-    <ul id="Informatie-bestelling">
-      <li class="Icon">
-        <img src="images/Icons/Bezorg.svg" alt="Bezorg icoon">
-        <p>Gratis verzending vanaf €30</p>
-      </li>
-      <li class="Icon">
-        <img src="images/Icons/Retour.svg" alt="Retour icoon">
-        <p>60 dagen gratis retourneren</p>
-      </li>
-      <li class="Icon">
-        <img src="images/Icons/winkel-icon.svg" alt="Winkel icoon">
-        <p>138 winkels</p>
-      </li>
-    </ul>
-  </div>
 
     <div id="Uitklap-Info-Wrapper">
       <details class="Uitklap-Info">
@@ -220,7 +222,8 @@
           <li>In het weekend bestellen? Zondag voor 16.00 uur besteld = maandag in huis.</li>
         </ul>
         <p id="Retourneren"><strong>Retourneren:</strong></p>
-          <p id="Text">Is je bestelling niet helemaal zoals je had gehoopt? Geen zorgen! Als je item ongedragen en onbeschadigd is,
+        <p id="Text">Is je bestelling niet helemaal zoals je had gehoopt? Geen zorgen! Als je item ongedragen en
+          onbeschadigd is,
           kun
           je het binnen 60 dagen retourneren. Dit kan eenvoudig in onze winkels. Stuur je het liever op? Dat kan
           kosteloos.</p>
@@ -228,7 +231,61 @@
       <div class="detail-lijn"></div>
     </div>
 
-    <script src="scripts/script.js"></script>
+    <!-- Review Section -->
+    <p id="Review">Reviews</p>
+    <ul id="Review-Cijfers">
+      <li>5,00</li>
+      <li>2 beoordelingen</li>
+    </ul>
+    <img src="images/Icons/E-logo.png" id="Trustimg" alt="E-trusted logo">
+
+    <!-- Progress Bars -->
+    <div id="Progress-Bars">
+      <!-- Balk 1 -->
+      <div class="Balk-Een">
+        <p>5</p>
+        <img src="images/Icons/ster.png" alt="5 Ster icoon">
+        <div class="Balk-Leeg">
+          <div class="Progres-bar" data-progress="100"></div>
+        </div>
+      </div>
+
+      <!-- Balk 2 -->
+      <div class="Balk-Een">
+        <p>4</p>
+        <img src="images/Icons/ster.png" alt="4 Ster icoon">
+        <div class="Balk-Leeg">
+          <div class="Progres-bar" data-progress="0"></div>
+        </div>
+      </div>
+
+      <!-- Balk 3 -->
+      <div class="Balk-Een">
+        <p>3</p>
+        <img src="images/Icons/ster.png" alt="3 Ster icoon">
+        <div class="Balk-Leeg">
+          <div class="Progres-bar" data-progress="0"></div>
+        </div>
+      </div>
+
+      <!-- Balk 4 -->
+      <div class="Balk-Een">
+        <p>2</p>
+        <img src="images/Icons/ster.png" alt="2 Ster icoon">
+        <div class="Balk-Leeg">
+          <div class="Progres-bar" data-progress="0"></div>
+        </div>
+      </div>
+
+      <!-- Balk 5 -->
+      <div class="Balk-Een">
+        <p>1</p>
+        <img src="images/Icons/ster.png" alt="1 Ster icoon">
+        <div class="Balk-Leeg">
+          <div class="Progres-bar" data-progress="0"></div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -330,6 +387,7 @@
 
     </div>
   </footer>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

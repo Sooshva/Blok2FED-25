@@ -109,6 +109,7 @@ html {
   z-index: 10;
   width: 100%;
   height: 3.625em;
+  -webkit-tap-highlight-color: transparent;
   /* background: rgba(255, 255, 255, 0.159); */
   /* filter: invert(1); */
 }
@@ -157,9 +158,147 @@ html {
   filter: grayscale(100%);
 }
 
+#Main_Menu button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#Main_Menu button img {
+  width: 4em;
+  position:relative;
+  
+}
 /********/
 /* HAMBURGER */
 /********/
+
+#hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 375px;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+  z-index: 20;
+  list-style: none;
+  overflow-y: auto;
+  padding-left:0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#hamburger-menu.show {
+  transform: translateX(0);
+}
+
+#hamburger-menu #Boven-Hamburger{
+  display:flex;
+  padding-bottom:1em;
+  border-bottom-style: solid;
+  border-width: 0.01em;
+  color:var(--colour-line-details)
+}
+
+#Boven-Hamburger #Sluit{
+position:relative;
+left:1em;
+top:0.25em;
+}
+
+#Boven-Hamburger #Sluit-Logo{
+  left:75%;
+  width:85%;
+}
+
+#hamburger-menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#hamburger-menu-lijst{
+  padding-left: 0;
+}
+
+#hamburger-menu-lijst li {
+  margin: 1em 0;
+  list-style: none;
+  padding-top:1em;
+  padding-bottom:2em;
+  border-bottom-style:solid;
+  border-width:0.1em;
+  color:var(--colour-line-details);
+  padding-left:1.5em;
+  font-size:1em;
+}
+
+#hamburger-menu-lijst #Sale a{
+text-transform: uppercase;
+color:hotpink;
+}
+
+#hamburger-menu a{
+  text-decoration: none;
+  color:rgb(18, 18, 18); 
+  font-size:14px;
+}
+
+#Hamburgers-icon{
+  padding-left:1em;
+}
+
+#Hamburgers-icon li{
+list-style:none;
+}
+
+#Hamburgers-icon a{
+  text-decoration: none;
+  color:rgba(18, 18, 18, 0.8); 
+}
+
+#Hamburgers-icon details {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  color:rgba(18, 18, 18, 0.8); 
+  border-top-style: solid;
+  border-width:0.1em;
+  border-color: var(--colour-line-details);
+}
+
+#Hamburgers-icon summary {
+  cursor: pointer;
+  font-size: 14px;
+  padding-top:1.5em;
+  padding-bottom:1.5em;
+}
+
+#Uitklap-Talen{
+color:black;
+font-size:16px;
+width:fit-content;
+padding-left:1em;
+}
+
+#Uitklap-Talen ul{
+margin-top:1em;
+}
+
+#Uitklap-Talen li{
+  text-decoration: underline;
+  text-underline-offset:0.25em;
+  text-decoration-color:rgb(179, 179, 179);
+  line-height:21px;
+  margin-bottom:.25em;
+  border-style:none;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
 
 /**********************/
 /* HEADER */
@@ -623,7 +762,7 @@ h4 {
 }
 
 .detail-lijn {
-  width: 28em;
+  width: 21.5em;
   height: 0.005em;
   background-color: var(--colour-line-details);
   cursor: pointer;
@@ -742,12 +881,14 @@ h4 {
   padding: 0;
   position: relative;
   margin-top: 1em;
+  top:3em;
+  right:1em;
 }
 
 #Terug-Knop p {
   position: relative;
-  top: 1em;
-  font-size: 0.75em;
+  top: 0.5em;
+  font-size: 1em;
   color: rgb(67, 67, 67);
   margin-left: 1em;
 }
@@ -1056,33 +1197,138 @@ h1 {
 
 #Dikgedrukt {
   font-size: 16px;
-  margin-bottom:2em;
+  margin-bottom: 2em;
 }
 
 #Lijst {
   margin-bottom: 2em;
   height: 142px;
   width: 21em;
-  padding:0.25em;
-  color:rgba(18, 18, 18, 0.6);
+  padding: 0.25em;
+  color: rgba(18, 18, 18, 0.6);
 }
 
 #Lijst li {
   text-align: left;
   line-height: 1.3125em;
-  margin-left:1em;
-  margin-bottom:0.5em;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
 }
 
 #Retourneren {
   font-size: 16px;
-  margin-bottom:2em;
+  margin-bottom: 2em;
 }
 
-#Text{
+#Text {
   text-align: left;
   line-height: 1.3125em;
   font-size: 0.95em;
-  width:25em;
-  padding-bottom:1.5em;
+  width: 22.5em;
+  padding-bottom: 1.5em;;
+}
+
+/**********************/
+/* Review section*/
+/**********************/
+
+#Review {
+  font-weight: 400;
+  line-height: 21px;
+  color: rgba(18, 18, 18, 0.895);
+  font-size: 1.125em;
+  padding: 1em;
+  margin: 0;
+}
+
+#Review-Cijfers {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1em;
+  flex-direction: row;
+}
+
+#Review-Cijfers li:nth-of-type(1) {
+  font-size: 1.75em;
+  font-weight: bolder;
+}
+
+#Review-Cijfers li:nth-of-type(2) {
+  font-size: 0.75em;
+  position: relative;
+  left: 16em;
+}
+
+#Review-Cijfers li:nth-of-type(1) {
+  font-size: 1.75em;
+  position: relative;
+  font-weight: bolder;
+}
+
+#Review-Cijfers li:nth-of-type(2) {
+  font-size: .75em;
+  position: relative;
+  left: 16em;
+}
+
+#Review-Cijfers li:nth-of-type(3) {
+  width: 3em;
+  height: 3em;
+  margin: 0em;
+  padding: 0em;
+  border-radius: 50%;
+  bottom: 1em;
+}
+
+#Trustimg {
+  position: relative;
+  width: 3em;
+  bottom: 5.5em;
+  left: 18em;
+}
+
+/**********************/
+/* Progress bars */
+/**********************/
+
+#Progress-Bars {
+  margin-top: 2em;
+}
+
+.Balk-Een {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.Balk-Een p {
+  font-size: 0.875em;
+  color: rgb(67, 67, 67);
+}
+
+.Balk-Een img {
+  width: 2em;
+  margin-left: 0.5em;
+}
+
+.Balk-Leeg {
+  position: relative;
+  margin-left: 1em;
+  width: 13em;
+  height: 1.09375em;
+  background-color: rgb(229, 229, 229);
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.Progres-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%; 
+  background-color: var(--button-font-color, #000000); 
+  border-radius: 0.25em;
+  transition: width 0.5s ease;
 }
