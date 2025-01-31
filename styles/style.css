@@ -25,6 +25,7 @@
 /**********************/
 /* BASISSTIJLEN */
 /**********************/
+
 body,
 html {
   background-color: var(--color-background);
@@ -33,6 +34,31 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  mix-blend-mode: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-text: #ffffff;
+    --color-background: #ffffff;
+    --color-purple-banner: #c5c5c5;
+    --color-deal-banner: rgb(255, 255, 255);
+    --button-font-color: rgb(253, 253, 253);
+    --button-background-color: #ffffff;
+    --colour-line-details: rgba(255, 255, 255, 0.171);
+    --font-details: rgba(255, 255, 255, 0.6);
+    background-color: rgb(24, 24, 24);
+    color: white;
+  }
+
+  img{
+    mix-blend-mode: multiply;
+  }
 }
 
 /**********************/
@@ -53,7 +79,7 @@ html {
   position: relative;
   max-width: 100%;
   overflow: hidden;
-  z-index: 1;
+  z-index: 3;
 }
 
 #paarse-banner li {
@@ -110,8 +136,6 @@ html {
   width: 100%;
   height: 3.625em;
   -webkit-tap-highlight-color: transparent;
-  /* background: rgba(255, 255, 255, 0.159); */
-  /* filter: invert(1); */
 }
 
 #Main_Menu button img {
@@ -179,11 +203,11 @@ html {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 375px;
+  width: 23.4375em;
   background-color: white;
   transform: translateX(-100%);
   transition: transform 1s ease-in-out;
-  z-index: 20;
+  z-index: 12;
   list-style: none;
   overflow-y: auto;
   padding-left: 0;
@@ -192,6 +216,7 @@ html {
 
 #hamburger-menu.show {
   transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
 }
 
 #hamburger-menu #Boven-Hamburger {
@@ -245,7 +270,7 @@ html {
 #hamburger-menu a {
   text-decoration: none;
   color: rgb(18, 18, 18);
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 #Hamburgers-icon {
@@ -272,14 +297,14 @@ html {
 
 #Hamburgers-icon summary {
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.875em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
 #Uitklap-Talen {
   color: black;
-  font-size: 16px;
+  font-size: 1em;
   width: fit-content;
   padding-left: 1em;
 }
@@ -292,7 +317,7 @@ html {
   text-decoration: underline;
   text-underline-offset: 0.25em;
   text-decoration-color: rgb(179, 179, 179);
-  line-height: 21px;
+  line-height: 1.3125em;
   margin-bottom: .25em;
   border-style: none;
 }
@@ -405,7 +430,7 @@ h2 {
   max-height: 100%;
   top: 3.75em;
   left: 15em;
-  z-index: 99;
+  z-index: 6;
 }
 
 .card-list .card-item .artikel-omschrijving {
@@ -707,6 +732,7 @@ h4 {
   max-width: 5em;
   height: auto;
   margin-bottom: 0.75em;
+  cursor: pointer;
 }
 
 #PaarseBlokFooter .paar p {
@@ -744,6 +770,8 @@ h4 {
   right: 1em;
   cursor: pointer;
   outline: none;
+  list-style: none;
+  margin-left: 1em;
 }
 
 .Para ul {
@@ -756,7 +784,7 @@ h4 {
 .Para li {
   position: relative;
   right: 3em;
-  font-size: 12px;
+  font-size: 0.75em;
   color: var(--font-details);
   margin-bottom: 0.75em;
   cursor: pointer;
@@ -804,11 +832,11 @@ h4 {
   background-color: var(--button-font-color);
   border-radius: 0.25em;
   margin-top: 2em;
-  height: 48px;
+  height: 3em;
 }
 
 #Certificaat img {
-  height: 94.7344px;
+  height: 5.9209em;
   width: 5em;
   margin: 0em;
   padding: 0;
@@ -898,13 +926,19 @@ h4 {
 /* Slider */
 /**********************/
 
+.image-list {
+  max-width: 100%;
+}
+
 .image-list .image-item {
   display: flex;
-  width: 100vh;
+  width: 100%;
   margin-right: 0.5em;
 }
 
 .image-item img {
+  width: 100%;
+  height: auto;
   padding: 0;
   margin: 0;
 }
@@ -915,8 +949,8 @@ h4 {
   max-height: 100%;
   background: rgba(242, 242, 231, 0.837);
   margin-top: 0;
-  height: 375px;
-  width: 375px;
+  height: 23.4375em;
+  width: 23.4375em;
 }
 
 .image-slider-wrapper .image-list {
@@ -944,7 +978,7 @@ h4 {
 }
 
 /**********************/
-/* Artikel pagina */
+/* Product */
 /**********************/
 
 #Margin-top-stuk {
@@ -1159,12 +1193,13 @@ h1 {
   margin-bottom: 0;
   cursor: pointer;
   outline: none;
+  list-style: none;
 }
 
 .Uitklap-Info p {
   font-size: 0.9em;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.3125em;
   color: rgba(18, 18, 18, 0.6);
 }
 
@@ -1176,8 +1211,8 @@ h1 {
   list-style: none;
   padding: 0;
   margin: 0;
-  height: 260px;
-  width: 343px;
+  height: 16.25em;
+  width: 21.4375em;
 }
 
 #List-Specificaties li {
@@ -1197,13 +1232,13 @@ h1 {
 }
 
 #Dikgedrukt {
-  font-size: 16px;
+  font-size: 1em;
   margin-bottom: 2em;
 }
 
 #Lijst {
   margin-bottom: 2em;
-  height: 142px;
+  height: 8.875em;
   width: 21em;
   padding: 0.25em;
   color: rgba(18, 18, 18, 0.6);
@@ -1217,7 +1252,7 @@ h1 {
 }
 
 #Retourneren {
-  font-size: 16px;
+  font-size: 1em;
   margin-bottom: 2em;
 }
 
@@ -1236,7 +1271,7 @@ h1 {
 
 #Review {
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.3125em;
   color: rgba(18, 18, 18, 0.895);
   font-size: 1.125em;
   padding: 1em;
@@ -1352,8 +1387,8 @@ h1 {
 .Trusted-Uitleg {
   display: flex;
   justify-content: center;
-  font-size: 10.5px;
-  line-height: 15.75px;
+  font-size: 0.65625em;
+  line-height:  0.984375em;
   text-align: center;
   margin-top: 0;
   padding-top: 0;
@@ -1381,17 +1416,17 @@ h1 {
   display: flex;
   flex-direction: column;
   color: rgb(0, 90, 160);
-  font-size: 13px;
+  font-size: 0.8125em;
   font-weight: 800;
   cursor: pointer;
   width: fit-content;
   height: fit-content;
   position: relative;
-  padding: 5.6px;
+  padding: 0.35em;
   bottom: 4em;
   left: 2em;
   -webkit-tap-highlight-color: transparent;
-  z-index: 21;
+  z-index: 4;
 }
 
 #Filter a {
@@ -1405,24 +1440,24 @@ h1 {
 #Filter div {
   position: absolute;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 15em;
-  height: 17em;
-  padding: 10px;
+  box-shadow: 0  0.25em  0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+  width: 13em;
+  height: 15em;
+  padding:  0.35em;
   display: flex;
   flex-direction: column;
-  z-index: 50;
+  z-index: 5;
 }
 
 #Filter label {
   display: flex;
   align-items: center;
   cursor: pointer;
-  gap: 5px;
+  gap:0.3125em;
 }
 
 #Filter img {
-  width: 30px;
+  width: 1.875em;
   height: auto;
   position: relative;
   bottom: 0.85em;
@@ -1430,10 +1465,10 @@ h1 {
 }
 
 #Filter span {
-  font-size: 12px;
+  font-size: 0.75em;
   color: black;
   position: relative;
-  left: 5px;
+  left: 0.3125em;
   margin: 0;
 }
 
@@ -1453,13 +1488,13 @@ h1 {
   margin: 0;
   color: rgb(63, 63, 63);
   bottom: 1em;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 #Jady li {
   position: relative;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 0.875em;
+  line-height: 1.3125em;
   left: 1em;
   margin-bottom: 0.5em;
 }
@@ -1518,26 +1553,26 @@ h1 {
   margin: 0;
   color: rgb(63, 63, 63);
   bottom: 1em;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 #Louise li {
   position: relative;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 0.875em;
+  line-height: 1.3125em;
   left: 1em;
   margin-bottom: 0.5em;
 }
 
 #Louise li:nth-of-type(2) {
-  color:black;
-  font-size:1em;
+  color: black;
+  font-size: 1em;
   font-weight: 900;
-  }
+}
 
 #Louise li:nth-of-type(3) {
-color:black;
-font-size:1em;
+  color: black;
+  font-size: 1em;
 }
 
 .Louise-Sterren {
@@ -1584,13 +1619,271 @@ font-size:1em;
   gap: 0.1em;
 }
 
-#Louise-Review #Verify-Logo {
+#Louise-Review .Verify-Logo {
   position: relative;
   bottom: 9.35em;
   left: 20.85em;
+  width: fit-content;
 }
 
-#Jady-Review #Verify-Logo {
-bottom:5.5em;
-left:17.5em;
+#Jady-Review .Verify-Logo {
+  bottom: 5.5em;
+  left: 17.5em;
+  width: fit-content;
+}
+
+#detail-lijn-review {
+  width: 21.5em;
+  height: 0.005em;
+  background-color: var(--colour-line-details);
+  margin-left: 1.5em;
+}
+
+
+/**********************/
+/* Animatie detail plusje */
+/**********************/
+
+.toggle-animatie {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-animatie::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 0.875em;
+  height: 0.0625em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.25s ease-in-out;
+}
+
+.toggle-animatie::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 0.0625em;
+  height: 0.875em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.25s ease-in-out;
+}
+
+.Uitklap-Info[open] .toggle-animatie::before {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.Uitklap-Info[open] .toggle-animatie::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+}
+
+details summary {
+  cursor: pointer;
+  position: relative;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary .toggle-animatie::before {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+details[open] summary .toggle-animatie::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+}
+
+/**********************/
+/* Animatie detail plusje (1)*/
+/**********************/
+
+.toggle-plusje {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-plusje::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 0.875em;
+  height: 0.0625em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.25s ease-in-out;
+}
+
+.toggle-plusje::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 0.0625em;
+  height: 0.875em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.25s ease-in-out;
+}
+
+.Uitklap-Info[open] .toggle-plusje::before {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.Uitklap-Info[open] .toggle-plusje::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+}
+
+details summary {
+  cursor: pointer;
+  position: relative;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary .toggle-plusje::before {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+details[open] summary .toggle-plusje::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+}
+
+/**********************/
+/* Animatie bezorg busje (2)*/
+/**********************/
+
+@keyframes busje {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateX(0em) translateY(-4em);
+  }
+
+  40% {
+    transform: translateX(20em) translateY(-4em);
+  }
+
+  50% {
+    transform: translateX(20em) translateY(-4em) scaleX(-1);
+  }
+
+  60% {
+    transform: translateX(0em) translateY(-4em) scaleX(-1);
+  }
+
+  75% {
+    transform: translateX(0em) translateY(0) rotate(360deg);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+#PaarseBlokFooter #Bezorg.clicked {
+  animation: busje 2s ease-in-out;
+}
+
+
+/**********************/
+/* Animatie hartjes cluse carousel (3)*/
+/**********************/
+
+
+@keyframes like-animation {
+  0% { transform: scale(1); }
+  5% { transform: scale(0.7); }
+  10% { transform: scale(1.5); }
+  15% { transform: scale(0.7); }
+  20% { transform: scale(1.5); }
+  25% { transform: scale(0.7); }
+  30% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+.card-list .card-item .like-icon.clicked {
+  animation: like-animation 0.5s ease-in-out 1;
+  cursor: pointer;
+}
+
+/**********************/
+/* Animatie ster (4)*/
+/**********************/
+
+@keyframes ster-animation {
+  0% {
+    scale:1;
+  }
+  50% {
+    scale:2;
+  }
+  
+  75% {
+    scale:1;
+  }
+  
+  100% {
+    scale:0;
+  }
+}
+
+#PaarseBlokFooter #Info-Ster.clicked {
+  animation-name: ster-animation;
+  animation-duration: 1s;
+}
+
+/**********************/
+/* Certificaat (5)*/
+/**********************/
+
+@keyframes certificaat-animation {
+  0% {
+    scale:1;
+  }
+  50% {
+    scale:2;
+  }
+  
+  75% {
+    scale:1;
+  }
+  
+  100% {
+    scale:0;
+  }
+}
+
+#Certificaat.clicked {
+  animation-name: certificaat-animation;
+  animation-duration: 1s;
 }

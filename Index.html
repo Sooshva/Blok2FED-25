@@ -17,6 +17,7 @@
 
 <body>
   <header>
+    <!-- paarse top banner -->
     <div id="paarse-banner">
       <ul>
         <li id="slides1" class="active">
@@ -38,7 +39,7 @@
     <nav>
       <ul id="Main_Menu">
         <li>
-          <button aria-label="Open menu">
+          <button>
             <img src="images/Icons/Hamburger-menu.svg" alt="Open menu">
           </button>
         </li>
@@ -49,57 +50,61 @@
           <a href="#"><img src="images/Icons/Vergrootglas.svg" alt="Zoekfunctie"></a>
         </li>
         <li>
-          <a href="#"><img src="images/Icons/Like.svg" alt="Verlanglijst"></a>
+          <a href="artikel.html"><img src="images/Icons/Like.svg" alt="Verlanglijst"></a>
         </li>
         <li>
-          <a href="#"><img src="images/Icons/Winkelmand.svg" alt="Winkelmand"></a>
+          <a href="artikel.html"><img src="images/Icons/Winkelmand.svg" alt="Winkelmand"></a>
         </li>
       </ul>
 
       <!-- Hamburger menu -->
-      <ul id="hamburger-menu" hidden>
-        <li>
+      <div id="hamburger-menu" hidden>
+        <div id="Boven-Hamburger">
           <button>
-            <img src="images/Icons/Kruis-icon.svg" alt="Sluiten">
+            <img src="images/Icons/Kruis-icon.svg" id="Sluit" alt="Sluiten">
           </button>
-        </li>
-        <li>
-          <a href="#"><img src="images/Icons/Lucardi-logo.svg" alt="Lucardi logo"></a>
-        </li>
-        <li><a href="#">Alle producten</a></li>
-        <li><a href="#">Sieraden en Horloges</a></li>
-        <li><a href="#">Cadeaus</a></li>
-        <li><a href="#">Collecties</a></li>
-        <li><a href="#">Inspiratie</a></li>
-        <li><a href="#">Gaatjes schieten</a></li>
-        <li><a href="#">Sale</a></li>
-        <li>
-          <a href="#"><img src="images/Icons/poppetje.svg" alt="Inloggen"> Inloggen /
-            member account aanmaken</a>
-        </li>
-        <li>
-          <a href="#"><img src="images/Icons/winkel-icon.svg" alt="Winkels & openingstijden">
-            Winkels & openingstijden</a>
-        </li>
-        <li>
-          <a href="#"><img src="images/Icons/Vraagteken-icon.svg" alt="Hulp & informatie">
-            Ik heb hulp nodig</a>
-        </li>
-        <li>
-          <details>
-            <summary>Taal selecteren: Nederlands</summary>
-            <ul>
-              <li><a href="#">Nederlands</a></li>
-              <li><a href="#">België</a></li>
-              <li><a href="#">Deutsch</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul>
+          <a href="#"><img src="images/Icons/Lucardi-logo.svg" id="Sluit-Logo" alt="Lucardi logo"></a>
+        </div>
+        <ul id="hamburger-menu-lijst">
+          <li><a href="#">Alle producten</a></li>
+          <li><a href="#">Sieraden en Horloges</a></li>
+          <li><a href="#">Cadeaus</a></li>
+          <li><a href="#">Collecties</a></li>
+          <li><a href="#">Inspiratie</a></li>
+          <li><a href="#">Gaatjes schieten</a></li>
+          <li id="Sale"><a href="#">Sale</a></li>
+        </ul>
+        <ul id="Hamburgers-icon">
+          <li>
+            <a href="#"><img src="images/Icons/poppetje.svg" alt="Inloggen"> Inloggen /
+              member account aanmaken</a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Icons/winkel-icon.svg" alt="Winkels & openingstijden">
+              Winkels & openingstijden</a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Icons/Vraagteken-icon.svg" alt="Hulp & informatie">
+              Ik heb hulp nodig</a>
+          </li>
+          <li>
+            <details>
+              <summary>Taal selecteren</summary>
+              <ul id="Uitklap-Talen">
+                <li><a href="#">Nederlands</a></li>
+                <li><a href="#">België</a></li>
+                <li><a href="#">Deutsch</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
+
   <main>
+            <!-- Openingstuk -->
     <ul id="StartImg">
       <li>
         <img src="images/Header-foto-header.jpeg" alt="">
@@ -110,7 +115,7 @@
       </li>
     </ul>
 
-
+        <!-- Cluse carousel -->
     <section class="container">
       <h2>New in: Cluse horloges</h2>
       <div class="slider-wrapper">
@@ -179,6 +184,7 @@
       </div>
     </section>
 
+            <!-- Back to school stuk -->
     <div class="CardBackToSchool">
       <img src="images/H3-back-to-school-image.jpeg" alt="">
       <h3>Back to school</h3>
@@ -258,10 +264,11 @@
   </main>
 
   <footer>
+    <!-- Paarse blok -->
     <ul id="PaarseBlokFooter">
       <li>
         <div class="paar">
-          <img src="images/Icons/Bezorg.svg" alt="">
+          <img src="images/Icons/Bezorg.svg " id="Bezorg" alt="">
           <p>Op werkdagen voor 22:00 besteld, morgen in huis</p>
         </div>
       </li>
@@ -279,7 +286,7 @@
       </li>
       <li>
         <div class="paar">
-          <img src="images/Icons/Review.svg" alt="">
+          <img src="images/Icons/Review.svg" id="Info-Ster" alt="">
           <p>4,59 uit 5 (55.000+ review)</p>
         </div>
       </li>
@@ -287,7 +294,9 @@
 
     <div id="Footer-groep">
       <details class="Para">
-        <summary>Direct naar</summary>
+        <summary>Direct naar
+          <span class="toggle-animatie"></span>
+        </summary>
         <ul>
           <li>Oorbellen</li>
           <li>Ringen</li>
@@ -298,9 +307,11 @@
           <li>Enkelbandjes</li>
         </ul>
       </details>
-      <div class="detail-lijn"></div>
+
       <details class="Para">
-        <summary>Over Lucardi</summary>
+        <summary>Over Lucardi
+          <span class="toggle-animatie"></span>
+        </summary>
         <ul>
           <li>Over ons</li>
           <li>Onze winkels</li>
@@ -310,9 +321,11 @@
           <li>Winkeloverzicht</li>
         </ul>
       </details>
-      <div class="detail-lijn"></div>
+
       <details class="Para">
-        <summary>Klantenservice</summary>
+        <summary>Klantenservice
+          <span class="toggle-animatie"></span>
+        </summary>
         <ul>
           <li>Veelgestelde vragen</li>
           <li>Contact</li>
@@ -320,7 +333,6 @@
           <li>Actievoorwaarden</li>
         </ul>
       </details>
-      <div class="detail-lijn"></div>
 
       <div class="Member-stuk">
         <h5>Lucardi Member</h5>
@@ -329,11 +341,9 @@
       </div>
 
       <div id="Certificaat">
-        <img src="images/Beste-winkelketen-1.png" alt="Certificaat beste winkelketen 2024-2025 in mode assecoires">
-        <img src="images/Beste-winkelketen-1.png" alt="Certificaat beste winkelketen 2024-2025 in mode assecoires">
+        <img src="images/Beste-winkelketen-1.png" alt="Certificaat beste winkelketen 2024-2025 in mode accessoires">
+        <img src="images/Beste-winkelketen-1.png" alt="Certificaat beste winkelketen 2024-2025 in mode accessoires">
       </div>
-      <div class="detail-lijn"></div>
-
 
       <div class="Laatste-stuk">
         <div class="Icon-stuk">
@@ -347,16 +357,16 @@
           </div>
         </div>
 
-
         <ul class="Laatste-Links">
           <li>Algemene voorwaarden</li>
           <li>Cookie-instellingen</li>
           <li>Privacy policy</li>
         </ul>
       </div>
-
     </div>
   </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
