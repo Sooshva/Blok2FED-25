@@ -183,6 +183,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  Als ik de test doe met de voiceover, merk ik dat de screenreader niet alle tekst voorleest. De details summary tekst leest die voor. Alleen niet wat de inhoud is. Ook kan ik niet met alles interacteren bv. de buttons bij het liken van de een product op de homepage.
+
+  Bij de ally checker zie ik dat ik nog een paar dingen mis:
+  - Ik mis de left aligned text bij de content.
+  - Je kan haast niet navigeren met de keyboard. Het leest niet alles voor.
+  - Ik kan fieldset en legend gebruiken bij de artikelpagina, vooral bij de filter.
+  - Mijn animatie voldoet niet reduced-motion.
+  - De kleurencontrast h1 is niet goed.
+
 </details>
 
 
