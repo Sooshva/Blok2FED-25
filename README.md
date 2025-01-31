@@ -241,13 +241,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd hoe je een carousel kan maken. Dit duurde wel even voordat ik het door had, maar dit ging goed.
+  Wat het beste ging was dingen positioneren.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images//p1.png" width="375px" alt="top">
+   <img src="readme-images//p2.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  Ik vond het lastig om de animatie te doen met de plusje bij de details. Vooral het javascript gedeelte vond ik het moeilijkst. 
+Ook het verwerken van de light en dark mode in de website vond ik moeilijk. Ik wou dingen wat lichter maken, want sommige dingen zijn haast niet te lezden. 
+Ik had gezien dat het makkelijker kon als ik custom properties meer had gebruikt, daar heb ik ook spijt van.
+Al in al het lastigste waren de animaties,javascript en dark en light modus.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -268,5 +274,42 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. W3Schools.com. (12-9-2024). https://www.w3schools.com/tags/tag_dd.asp
   2. Hmaburger menu website: Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., Repo, S., . . . Repo, S. (n.d.). Hamburger Menu Vector SVG Icon - SVG Repo. SVG Repo. https://www.svgrepo.com/svg/312300/hamburger-menu
   3. https://www.w3schools.com/tags/ref_pxtoemconversion.asp
+  4. https://stackoverflow.com/questions/1734618/how-to-increase-the-gap-between-text-and-underlining-in-css underline offset.
+  5. Coding2GO. (2024, June 16). Learn CSS Animations in 9 Minutes [Video]. YouTube. https://www.youtube.com/watch?v=z2LQYsZhsFw voor animaties
+  6. CSSnippets. (2024, November 28). Master CSS Animation Property in 11 minutes [Full Tutorial] 🚀 [Video]. YouTube. https://www.youtube.com/watch?v=Bhj4miRkSOc voor animaties
+  7. Fireship. (2020, April 21). CSS animation in 100 seconds [Video]. YouTube. https://www.youtube.com/watch?v=HZHHBwzmJLk voor animaties
+  8. Cascading Style. (2020, June 6). Animated Skill Bar using HTML & CSS | Cascading Style [Video]. YouTube. https://www.youtube.com/watch?v=EoN_4fv3T7A voor review bar 
+  9. CSS Dev and UX. (2020, August 31). Detail and Summary tag in HTML with CSS styling and transitions [Video]. YouTube. https://www.youtube.com/watch?v=4NAUHt8gebo detail summary styling
+  10. Bellamy-Royds, A. (2022, September 30). How to scale SVG | CSS-Tricks. CSS-Tricks. https://css-tricks.com/scale-svg/ voor alle svg's
+  11. grid-template-columns - CSS: Cascading Style Sheets | MDN. (2024, October 8). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns grid voor paarse blok footer
+  12. Code Instinct. (2018b, December 31). Auto Image Slideshow using HTML and CSS [Video]. YouTube. https://www.youtube.com/watch?v=j18CH0Grhbw slideshows
+  13. font-size-adjust - CSS: Cascading Style Sheets | MDN. (2024, December 19). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust overal bij fonts
+  14. W3Schools.com. (n.d.). https://www.w3schools.com/css/css3_buttons.asp styling bij buttons
+  15. CodingNepal. (2023, September 2). Create responsive image slider in HTML CSS and JavaScript | Image Slider HTML CSS & JavaScript [Video]. YouTube. https://www.youtube.com/watch?v=PsNaoDhzQm0 image slider artikelen
+  16. CodingNepal. (2022, October 31). Create a draggable image slider in HTML CSS & JavaScript | Mobile friendly slider in JavaScript [Video]. YouTube. https://www.youtube.com/watch?v=7HPsdVQhpRw image slider artikelen
+  17. CodingNepal. (2022b, October 31). Create a draggable image slider in HTML CSS & JavaScript | Mobile friendly slider in JavaScript [Video]. YouTube. https://www.youtube.com/watch?v=7HPsdVQhpRw image slider artikelen
+18. CodingNepal. (2023a, April 22). Create a draggable card slider in HTML CSS & JavaScript | Infinite Image slider in JavaScript [Video]. YouTube. https://www.youtube.com/watch?v=6QE8dXq9SOE image slider artikelen
+19. W3Schools.com. (n.d.-b). https://www.w3schools.com/cssref/css3_pr_column-gap.php column gap bij paarse footer blok
+20. Removing grid gaps. (n.d.). Stack Overflow. https://stackoverflow.com/questions/50504828/removing-grid-gaps column gap bij paarse footer blok
+21. CodingNepal. (2024, June 30). Create responsive card slider in HTML CSS & JavaScript | Step-by-Step tutorial [Video]. YouTube. https://www.youtube.com/watch?v=XxG7vqFecR8 image slider.
+22. CodingNepal. (2022c, October 31). Create a draggable image slider in HTML CSS & JavaScript | Mobile friendly slider in JavaScript [Video]. YouTube. https://www.youtube.com/watch?v=7HPsdVQhpRw
+ 23. CodingLab. (2022, January 22). How to make Card Slider in HTML CSS & JavaScript [Video]. YouTube. https://www.youtube.com/watch?v=BKKcGb80MOs cards maken voor image slider
+24. CodingNepal. (2024b, August 24). How to create responsive card slider in HTML CSS & JavaScript | Step-by-Step tutorial [Video]. YouTube. https://www.youtube.com/watch?v=VUtJ7FWCfZA cards maken voor image slider
+25. CodingNepal. (2023b, April 22). Create a draggable card slider in HTML CSS & JavaScript | Infinite Image slider in JavaScript [Video]. YouTube. https://www.youtube.com/watch?v=6QE8dXq9SOE cards maken voor image slider
+26. W3Schools.com. (n.d.-c). https://www.w3schools.com/cssref/css3_pr_filter.php filter voor menu
+27. Olawanle, J. (2023, June 22). CSS Image Styling: Enhancing Visual Appeal with Style. Kinsta®. https://kinsta.com/blog/css-image-styling/ header foto
+28. box-shadow - CSS: Cascading Style Sheets | MDN. (2024, August 13). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow pop-up bij filter
+29. The Web School. (2022, January 10). Perfect image fit in CSS [Video]. YouTube. https://www.youtube.com/watch?v=-4-COv3tY0I styling header foto
+30. max-height - CSS: Cascading Style Sheets | MDN. (2024, December 19). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/max-height bij max-height
+37. CSS - display elements in columns. (n.d.). Stack Overflow. https://stackoverflow.com/questions/56732889/css-display-elements-in-columns paarse blok footer
+38. border-bottom-style - CSS: Cascading Style Sheets | MDN. (2024, July 26). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-style bottom style styling
+39. - YouTube. (n.d.). https://www.youtube.com/shorts/xvTWmWG6liM text carousel bovenaan
+40. Coding Artist. (2021, August 27). Auto Image Slideshow | HTML & CSS Tutorial | with Source code [Video]. YouTube. https://www.youtube.com/watch?v=4K9eI6FhyI4 text carousel
+41. - YouTube. (n.d.-b). https://www.youtube.com/shorts/W2yJ_IbkAyI image slider
+42. box-sizing - CSS: Cascading Style Sheets | MDN. (2024, July 26). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing box sizing in het algemeen
+43. :focus-visible - CSS: Cascading Style Sheets | MDN. (2024, November 26). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible bij css
+44. Kevin Powell. (2016, December 21). Tutorial: Learn how to use CSS Media Queries in less than 5 minutes [Video]. YouTube. https://www.youtube.com/watch?v=2KL-z9A56SQ dark en light query
+45. How to remove blue-box-fill when clicking the buttons? (n.d.). Stack Overflow. https://stackoverflow.com/questions/62948004/how-to-remove-blue-box-fill-when-clicking-the-buttons bij a hrefs css
+46. Alle sanne oefeningen die op dlo staan, maar vooral de animatie oefeningen en de menu oefening.
 
 </details>
